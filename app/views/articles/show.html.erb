@@ -1,0 +1,6 @@
+<h1>Detailed view</h1>
+<h3><%=@article.title%></h3>
+<p><%=@article.content%></p>
+<br>
+<p><%=link_to "edit", edit_article_path(@article)%></p>
+<p><%=link_to "delete", article_path(@article.id), method: :delete, data: { confirm: 'Are you sure?' } %></p>
